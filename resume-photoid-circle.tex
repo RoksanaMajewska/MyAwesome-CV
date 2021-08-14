@@ -1,0 +1,103 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\usepackage{multicol} % Required for multiple columns of text
+\newcommand*\roottitle[1]{\subsection*{#1}\vspace{-0.3em}\nopagebreak[4]} % Top level sections in the template
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\photo[circle,edge,left]{lupo.jpg}
+\name{Łukasz Bernard}{Polański}
+\position{Network Administrator/Engineer{\enskip\cdotp\enskip}Solutions Architect - Infrastructure}
+\address{Hoffman Street 96, 5 Walt Hoff, Potchefstroom 2531, South Africa}
+\dateofbirth{born on 30\textsuperscript{th} March 1979 in Poland}
+\mobile{(+27) 788 538 501}
+\email{lukasz.polanski@nwu.ac.za}
+\homepage{www.nwu.ac.za}
+\github{LuPo}
+\linkedin{lukasz-polanski-79607926}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+\skype{cookisz}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+\quote{``Improvement begins with I."}
+
+%-------------------------------------------------------------------------------
+\begin{document} 
+
+% Print the header with above personal informations
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Łukasz Bernard Polański ~~~·~~~Résumé}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+% \input{resume/summary.tex}
+\input{cv-sections/summary.tex}
+\input{cv-sections/skills.tex}
+\input{cv-sections/experience.tex}
+\input{cv-sections/training_courses.tex}
+%\input{cv-sections/certifications.tex}
+\input{cv-sections/education.tex}
+\input{cv-sections/other_experience.tex}
+\input{cv-sections/publications.tex}
+\input{cv-sections/hobbies.tex}
+%\input{cv-sections/extracurricular.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
